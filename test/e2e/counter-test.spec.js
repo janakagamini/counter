@@ -3,7 +3,7 @@ describe('Example', () => {
     await device.relaunchApp();
   });
 
-  it('increment by 1 and accept to reset ever 5 increments', async () => {
+  it('increment by 1 and accept/reject to reset ever 5 increments', async () => {
     let counter = element(by.label('counter'))
     let incrementButton = element(by.label('incrementButton'))
     let dialogYesButton = element(by.text('YES'))

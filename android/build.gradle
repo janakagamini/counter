@@ -7,7 +7,7 @@ buildscript {
         jcenter()
         maven {
             // All of Detox' artifacts are provided via the npm module
-            url "$rootDir/../tests/node_modules/detox/Detox-android"
+            url "$rootDir/../test/node_modules/detox/Detox-android"
         }
         
     }
@@ -25,7 +25,7 @@ allprojects {
         jcenter()
         maven {
             // All of Detox' artifacts are provided via the npm module
-            url "$rootDir/../tests/node_modules/detox/Detox-android"
+            url "$rootDir/../test/node_modules/detox/Detox-android"
         }
         
     }
