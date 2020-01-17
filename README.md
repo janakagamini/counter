@@ -1,4 +1,4 @@
-Exploring Detox by Wix for end to end testing of native mobile apps.
+### Exploring Detox by Wix for end to end testing of native mobile apps.
 
 This repo has an iOS app and an Android app, both with identical functionality. Detox is used to test this functionality by writing tests once (in javascript) and executing on both platforms.
 
