@@ -1,0 +1,1 @@
+Exploring Detox by Wix for end to end testing of native mobile apps.

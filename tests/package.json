@@ -1,0 +1,29 @@
+{
+  "name": "counter",
+  "version": "0.0.1",
+  "devDependencies": {
+    "detox": "^15.1.2",
+    "jest": "^24.9.0"
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "../ios/Counter/build/Build/Products/Debug-iphonesimulator/Counter.app",
+        "build": "xcodebuild -project ../ios/Counter.xcodeproj -scheme Counter -configuration Debug -sdk iphonesimulator -derivedDataPath ../ios/Counter/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      },
+      "android.emu.debug": {
+        "binaryPath": "../android/app/build/outputs/apk/debug/app-debug.apk",
+        "build": "cd ../android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ../tests",
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3_API_27"
+        }
+      }
+    },
+    "test-runner": "jest"
+  }
+}
